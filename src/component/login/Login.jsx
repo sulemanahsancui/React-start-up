@@ -18,16 +18,16 @@ const Login = () => {
 
   const onsubmit = (e) => {
     e.preventDefault();
-    const userData = JSON.parse(localStorage.getItem("user", []));
+    // const userData = JSON.parse(localStorage.getItem("user", []));
 
-    if (userData.email !== email) {
-      setError(true);
-    } else if (userData.password !== password) {
-      setError(true);
-    } else {
-      naviagte("/");
-      setError(false);
-    }
+    // if (userData.email !== email) {
+    //   setError(true);
+    // } else if (userData.password !== password) {
+    //   setError(true);
+    // } else {
+    //   naviagte("/");
+    //   setError(false);
+    // }
   };
   const { email, password } = data;
   return (
